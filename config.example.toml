@@ -1,0 +1,46 @@
+# Markdown Downloader Configuration File
+# Copy this file to 'config.toml' or 'markdown-downloader.toml' and customize
+
+[general]
+# Output directory for downloaded files
+output_dir = "./downloads"
+
+# Maximum number of pages to crawl
+max_pages = 100
+
+# Number of pages to process before waiting (每处理10个文件进行一次等待)
+batch_size = 10
+
+# Wait time in seconds between batches (每批处理完成后等待60秒)
+wait_time = 60
+
+# Delay in milliseconds between requests
+request_delay = 500
+
+# HTTP timeout in seconds
+timeout = 30
+
+# User agent string
+user_agent = "Mozilla/5.0 (compatible; MarkdownDownloader/1.0)"
+
+[translation]
+# Enable translation feature
+enabled = false
+
+# Source language (use "auto" for auto-detection)
+source_lang = "auto"
+
+# Target language for translation
+target_lang = "zh"
+
+# DeepLX API URL
+deeplx_api_url = "https://deepl3.fileaiwork.online/dptrans?token=ej0ab47388ed86e843de9f499e52e6e664ae1m491cad7bf1.bIrYaAAAAAA=.b9c326068ac3c37ff36b8fea77867db51ddf235150945d7ad43472d68581e6c4pd14&newllm=1"
+
+# Maximum API requests per second
+max_requests_per_second = 2.0
+
+# Maximum text length per translation request
+max_text_length = 3000
+
+# Maximum paragraphs per request
+max_paragraphs_per_request = 10

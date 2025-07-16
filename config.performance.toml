@@ -1,0 +1,20 @@
+# 高性能配置文件
+# 适用于稳定网络环境和高性能需求
+
+[general]
+output_dir = "./downloads"
+max_pages = 100
+batch_size = 10          # 每处理10个文件进行一次等待
+wait_time = 60           # 增加等待时间以避免速率限制
+request_delay = 500      # 增加请求间延迟
+timeout = 30             # 保持足够的超时时间
+user_agent = "Mozilla/5.0 (compatible; MarkdownDownloader/1.0; +https://github.com/your-repo)"
+
+[translation]
+enabled = true
+source_lang = "auto"
+target_lang = "zh"
+deeplx_api_url = "https://deepl3.fileaiwork.online/dptrans?token=ej0ab47388ed86e843de9f499e52e6e664ae1m491cad7bf1.bIrYaAAAAAA=.b9c326068ac3c37ff36b8fea77867db51ddf235150945d7ad43472d68581e6c4pd14&newllm=1"
+max_requests_per_second = 1.0    # 降低请求频率以避免429错误
+max_text_length = 3000           # 适中的处理长度
+max_paragraphs_per_request = 8   # 减少段落数
