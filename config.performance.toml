@@ -14,7 +14,7 @@ user_agent = "Mozilla/5.0 (compatible; MarkdownDownloader/1.0; +https://github.c
 enabled = true
 source_lang = "auto"
 target_lang = "zh"
-deeplx_api_url = "https://deepl3.fileaiwork.online/dptrans?token=ej0ab47388ed86e843de9f499e52e6e664ae1m491cad7bf1.bIrYaAAAAAA=.b9c326068ac3c37ff36b8fea77867db51ddf235150945d7ad43472d68581e6c4pd14&newllm=1"
+deeplx_api_url = "https://deepl3.fileaiwork.online/"
 max_requests_per_second = 1.0    # 降低请求频率以避免429错误
 max_text_length = 3000           # 适中的处理长度
 max_paragraphs_per_request = 8   # 减少段落数
